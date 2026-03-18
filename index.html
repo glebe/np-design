@@ -152,7 +152,7 @@
   .video-frame {
     position: relative;
 /*    width: min(900px, 94vw);*/
-height: max(900px);
+    height: min(900px, 85vh);
     opacity: 0;
     animation: fadeUp 1s .9s forwards;
   }
@@ -179,6 +179,7 @@ height: max(900px);
   .video-frame video,
   .video-frame iframe {
     width: 100%;
+    height: max(900px 85vh);
     aspect-ratio: 9/16;
     display: block;
     border: none;
@@ -358,19 +359,19 @@ height: max(900px);
 <header>
   <div class="logo">Надежда Переяславская</div>
   <nav>
-    <a href="#video">Портфолио</a>
-    <a href="#welcome">О себе</a>
+    <!-- <a href="#video">Портфолио</a>
+    <a href="#welcome">О себе</a> -->
     <a href="#contact">Контакт</a>
   </nav>
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<!-- <section class="hero">
   <p class="eyebrow">Архитектура · Интерьер · Дизайн</p>
   <h1>Пространство,<br><em>рождённое</em><br>из идеи</h1>
   <p class="tagline">Авторские проекты · Москва и не только</p>
 </section>
-
+ -->
 <!-- VIDEO -->
 <section class="video-section" id="video">
   <div class="video-frame">
