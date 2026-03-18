@@ -151,7 +151,8 @@
 
   .video-frame {
     position: relative;
-    width: min(900px, 94vw);
+/*    width: min(900px, 94vw);*/
+height: max(900px);
     opacity: 0;
     animation: fadeUp 1s .9s forwards;
   }
@@ -178,7 +179,7 @@
   .video-frame video,
   .video-frame iframe {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 9/16;
     display: block;
     border: none;
     background: var(--espresso);
@@ -373,21 +374,7 @@
 <!-- VIDEO -->
 <section class="video-section" id="video">
   <div class="video-frame">
-    <!--
-      Замените блок ниже на ваш тег <video> или <iframe>.
-      Пример видео:
-        <video src="your-video.mp4" controls poster="cover.jpg"></video>
-      Пример YouTube:
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-    -->
-    <div class="video-placeholder" onclick="this.innerHTML='<p style=\'color:var(--gold);font-family:Cormorant Garamond,serif;font-size:1.2rem;padding:2rem;\'>Добавьте ваш файл видео или ссылку на YouTube в атрибут src</p>'">
-      <div class="play-btn">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <polygon points="5,2 18,10 5,18" fill="#C9A96E"/>
-        </svg>
-      </div>
-      <p class="placeholder-label">Видео-презентация</p>
-    </div>
+    <video src="reel.mp4" controls poster="reel-preview.jpg"></video>
   </div>
 </section>
 
@@ -396,21 +383,18 @@
   <div class="section-line"></div>
   <h2>Привет,<br>я <em>Надежда</em></h2>
   <p>
-    Я архитектор и дизайнер интерьеров с более чем десятилетним опытом создания пространств, 
-    в которых каждая деталь говорит о своём хозяине. Мой подход — это диалог между 
-    функциональностью и красотой, между характером заказчика и духом места.
+    Я архитектор-дизайнер, и для меня каждый интерьер – это история.
+
   </p>
   <p>
-    Работаю с жилыми и коммерческими объектами: от камерных квартир до загородных резиденций. 
-    Каждый проект — это совместное путешествие, в конце которого вас ждёт пространство, 
-    созданное именно для вас.
+    В своих проектах я стремлюсь создавать не просто эстетически привлекательные интерьеры, а глубоко продуманные пространства, наполненные смыслом и индивидуальностью. За каждым проектом стоит тщательная проработка деталей, где каждая мелочь имеет значение, а главное- это большая любовь к тому, что я делаю.
   </p>
 </section>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <p class="contact-label">Напишите мне</p>
-  <a class="contact-email" href="mailto:nadezhda@np-design.ru">nadezhda@np-design.ru</a>
+  <a class="contact-email" href="mailto:info@np-design.ru">info@np-design.ru</a>
 
   <div class="social-row">
 
